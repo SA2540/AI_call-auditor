@@ -37,7 +37,7 @@ with st.sidebar:
     gemini_key = api_key if api_key else None
     
     # Manager Email Configuration
-    default_email = "hamsajoshuaa@gmail.com"
+    default_email = "maheshnaikmk6@gmail.com"
     manager_email = st.text_input("Manager Email (for alerts)", value=default_email)
     st.caption(f"Critical alerts (<30 score) will be sent here.")
     
@@ -186,3 +186,4 @@ with tab3:
     with open("policies/company_policy.txt", "r") as f:
         st.code(f.read())
     st.info("To update policies, edit the text file directly in 'policies/company_policy.txt' and generic RAG will pick it up on next run.")
+
